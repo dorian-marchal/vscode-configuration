@@ -1,0 +1,53 @@
+{
+    "[php]": {
+        "editor.formatOnSave": false,
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    },
+    "[json]": {
+        "editor.formatOnSave": false,
+    },
+    "[scss]": {
+        "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "markdown.extension.quickStyling": true,
+    "editor.renderControlCharacters": true,
+    "explorer.confirmDragAndDrop": false,
+    "twigcs.executablePath": "/home/dorian/.config/composer/vendor/bin/twigcs",
+    "editor.dragAndDrop": false,
+    // "editor.detectIndentation": false,
+    // "editor.tabSize": 4,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/vendor": true,
+        "**/.git": true
+    },
+    "files.exclude": {
+        "**/.git": false,
+    },
+    "editor.minimap.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "editor.codeLens": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": true
+    },
+    "editor.rulers": [
+        80,
+    ]
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+code --list-extensions --show-versions > extensions.txt &
+code --version > version.txt &
+wait
