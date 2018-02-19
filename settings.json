@@ -49,5 +49,13 @@
     },
     "editor.rulers": [
         80,
+    ],
+    "sort-imports.on-save": false,
+    "window.zoomLevel": 0,
+    "todohighlight.keywords": [
+        "@FIXME",
+        "@TODO",
+        "FIXME",
+        "TODO"
     ]
 }
