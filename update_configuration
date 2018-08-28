@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Extensions.
 code --list-extensions --show-versions > extensions.txt &
+
+# VSCode Version.
 code --version > version.txt &
+
 wait

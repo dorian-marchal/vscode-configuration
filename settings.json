@@ -3,14 +3,25 @@
         "editor.formatOnSave": false,
         "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
     },
+    "[javascript]": {
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    },
     "[json]": {
         "editor.formatOnSave": false,
     },
+    "[twig]": {
+        "editor.formatOnSave": false,
+    },
+    "[shellscript]": {
+        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    },
     "[scss]": {
+        //"editor.formatOnSave": false,
         "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
     },
     "[markdown]": {
-        "files.trimTrailingWhitespace": false
+        "files.trimTrailingWhitespace": false,
+        "editor.formatOnSave": false
     },
     "editor.formatOnSave": true,
     "prettier.requireConfig": true,
@@ -37,7 +48,8 @@
     },
     "editor.minimap.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
-    "editor.codeLens": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -45,7 +57,8 @@
         "suppressGitVersionWarning": false,
         "suppressLineUncommittedWarning": false,
         "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true
+        "suppressResultsExplorerNotice": true,
+        "suppressShowKeyBindingsNotice": true
     },
     "editor.rulers": [
         80,
@@ -54,8 +67,12 @@
     "window.zoomLevel": 0,
     "todohighlight.keywords": [
         "@FIXME",
-        "@TODO",
-        "FIXME",
-        "TODO"
-    ]
+        "@TODO"
+    ],
+    "extensions.ignoreRecommendations": false,
+    "workbench.editor.tabSizing": "shrink",
+    "editor.autoIndent": false,
+    "gitlens.keymap": "alternate",
+    "workbench.commandPalette.history": 500,
+    "gitlens.historyExplorer.enabled": true
 }
