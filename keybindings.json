@@ -237,10 +237,6 @@
     },
     {
         "key": "ctrl+k u",
-        "command": "sftp.trans.remote"
-    },
-    {
-        "key": "ctrl+k u",
         "command": "-workbench.action.closeUnmodifiedEditors"
     },
     {
@@ -495,5 +491,55 @@
     {
         "key": "alt+m",
         "command": "editor.emmet.action.matchTag"
+    },
+    {
+        "key": "ctrl+k u",
+        "command": "sftp.upload.activeFile"
+    },
+    {
+        "key": "ctrl+k f1",
+        "command": "editor.action.openDeclarationToTheSide",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+k f12",
+        "command": "-editor.action.openDeclarationToTheSide",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+f1",
+        "command": "references-view.find",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "shift+alt+f12",
+        "command": "-references-view.find",
+        "when": "editorHasReferenceProvider"
+    },
+    {
+        "key": "ctrl+f1",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "-workbench.action.focusEighthEditorGroup"
     }
 ]

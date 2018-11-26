@@ -46,7 +46,7 @@
     "files.exclude": {
         "**/.git": false,
     },
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
@@ -74,5 +74,15 @@
     "editor.autoIndent": false,
     "gitlens.keymap": "alternate",
     "workbench.commandPalette.history": 500,
-    "gitlens.historyExplorer.enabled": true
+    "gitlens.historyExplorer.enabled": true,
+    "breadcrumbs.enabled": true,
+    "emmet.includeLanguages": {
+        "twig": "html"
+    },
+    "workbench.settings.editor": "json",
+    "emojisense.unicodeCompletionsEnabled": false,
+    "emojisense.showOnColon": false,
+    "files.associations": {
+        ".my-bashrc": "shellscript"
+    }
 }
