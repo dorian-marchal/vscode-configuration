@@ -1,5 +1,5 @@
 {
-	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// Place your snippets for twig here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
@@ -12,26 +12,10 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"console.log": {
-		"prefix": "cl",
+	"dump_data": {
+		"prefix": "dump",
 		"body": [
-			"console.log(${1});"
+			"{% include \"reskin/debug/dump_data.twig\" with { bloc_name: '${1:data}', hidden: true } %}"
 		]
-	},
-	"describe": {
-		"prefix": "desc",
-		"body": [
-			"describe('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
-		]
-	},
-	"it": {
-		"prefix": "i",
-		"body": [
-			"it('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
-		]
-	},
+	}
 }

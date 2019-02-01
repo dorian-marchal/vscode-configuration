@@ -46,7 +46,7 @@
     "files.exclude": {
         "**/.git": false,
     },
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
@@ -84,5 +84,15 @@
     "emojisense.showOnColon": false,
     "files.associations": {
         ".my-bashrc": "shellscript"
-    }
+    },
+    "search.usePCRE2": true,
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "window.enableMenuBarMnemonics": false,
+    "window.titleBarStyle": "native",
+    // Avoid . from triggering autocomplete (e.g. ..).
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.snippetSuggestions": "top",
+    // Ignore whitespace changes and file mv.
+    "gitlens.advanced.blame.customArguments": ["-w", "-M"]
 }

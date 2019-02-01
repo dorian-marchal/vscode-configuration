@@ -1,5 +1,5 @@
 {
-	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
+	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
@@ -12,26 +12,16 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"console.log": {
-		"prefix": "cl",
+	"var_dump": {
+		"prefix": "vd",
 		"body": [
-			"console.log(${1});"
+			"var_dump($1);",
 		]
 	},
-	"describe": {
-		"prefix": "desc",
+	"print_r": {
+		"prefix": "pr",
 		"body": [
-			"describe('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
+			"print_r($1);",
 		]
-	},
-	"it": {
-		"prefix": "i",
-		"body": [
-			"it('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
-		]
-	},
+	}
 }

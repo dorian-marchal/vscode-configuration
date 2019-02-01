@@ -541,5 +541,17 @@
     {
         "key": "ctrl+8",
         "command": "-workbench.action.focusEighthEditorGroup"
+    },
+    {
+        "key": "ctrl+q o",
+        "command": "workbench.action.closeOtherEditors"
+    },
+    {
+        "key": "ctrl+q r",
+        "command": "workbench.action.closeEditorsToTheRight"
+    },
+    {
+        "key": "ctrl+q l",
+        "command": "workbench.action.closeEditorsToTheLeft"
     }
 ]
