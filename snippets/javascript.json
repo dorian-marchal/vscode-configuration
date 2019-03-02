@@ -22,16 +22,32 @@
 		"prefix": "desc",
 		"body": [
 			"describe('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
+			"  ${3}",
+			"});",
 		]
 	},
 	"it": {
-		"prefix": "i",
+		"prefix": "it",
 		"body": [
 			"it('${1:...}', ${2}() => {",
-			"\t${3}",
-			"});${4}",
+			"  ${3}",
+			"});",
 		]
+	},
+	"from": {
+		"prefix": "from",
+		"body": "import ${2:_} from '$1';",
+	},
+	"___": {
+		"prefix": "___",
+		"body": ["import _ from 'lodash';", ""],
+	},
+	"imp": {
+		"prefix": "imp",
+		"body": "import $1 from '${2:$1}';",
+	},
+	"deps": {
+		"prefix": "deps",
+		"body": "@param {Object} deps Dependency injection, used for unit testing.",
 	},
 }
