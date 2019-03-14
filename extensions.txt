@@ -4,10 +4,10 @@ amatiasq.sort-imports@6.0.1
 bierner.emojisense@0.4.1
 bierner.markdown-emoji@0.0.7
 bierner.markdown-preview-github-styles@0.1.4
-bmewburn.vscode-intelephense-client@1.0.4
+bmewburn.vscode-intelephense-client@1.0.8
 BriteSnow.vscode-toggle-quotes@0.3.2
 cerzat43.twigcs@0.4.2
-dbaeumer.vscode-eslint@1.8.0
+dbaeumer.vscode-eslint@1.8.2
 denco.confluence-markup@0.1.4
 dorian-marchal.add-line-break@0.0.1
 eamodio.gitlens@9.5.1
@@ -18,10 +18,10 @@ formulahendry.auto-rename-tag@0.0.15
 ikappas.phpcs@1.0.5
 ionceflorin.copy-current-file-path@0.0.2
 joelday.docthis@0.7.1
-liximomo.sftp@1.9.5
+liximomo.sftp@1.10.0
 mblode.twig-language-2@0.6.2
-mikeburgh.xml-format@1.0.1
-neilbrayfield.php-docblocker@1.7.0
+mikeburgh.xml-format@1.0.2
+neilbrayfield.php-docblocker@1.8.0
 nemesv.copy-file-name@1.0.0
 persoderlind.vscode-phpcbf@0.0.8
 pflannery.vscode-versionlens@0.22.0
@@ -37,4 +37,4 @@ wayou.vscode-todo-highlight@1.0.4
 whatwedo.twig@1.0.2
 wmaurer.change-case@1.0.0
 ybaumes.highlight-trailing-white-spaces@0.0.2
-yzhang.markdown-all-in-one@2.1.0
+yzhang.markdown-all-in-one@2.1.1
