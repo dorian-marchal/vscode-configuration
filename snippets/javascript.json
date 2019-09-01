@@ -12,42 +12,20 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"console.log": {
-		"prefix": "cl",
-		"body": [
-			"console.log(${1});"
-		]
-	},
-	"describe": {
-		"prefix": "desc",
-		"body": [
-			"describe('${1:...}', ${2}() => {",
-			"  ${3}",
-			"});",
-		]
-	},
-	"it": {
-		"prefix": "it",
-		"body": [
-			"it('${1:...}', ${2}() => {",
-			"  ${3}",
-			"});",
-		]
-	},
-	"from": {
-		"prefix": "from",
-		"body": "import ${2:_} from '$1';",
-	},
-	"___": {
-		"prefix": "___",
-		"body": ["import _ from 'lodash';", ""],
-	},
-	"imp": {
-		"prefix": "imp",
-		"body": "import $1 from '${2:$1}';",
-	},
-	"deps": {
-		"prefix": "deps",
-		"body": "@param {Object} deps Dependency injection, used for unit testing.",
-	},
+	// "from": {
+	// 	"prefix": "from",
+	// 	"body": "const ${2:_} = require('$1');",
+	// },
+	// "___": {
+	// 	"prefix": "___",
+	// 	"body": ["const _ = require('lodash');", ""],
+	// },
+	// "imp": {
+	// 	"prefix": "imp",
+	// 	"body": "const $1 = require('${2:$1}');",
+	// },
+	"class": {
+		"prefix": "class",
+		"body": "className={${2:style.${1}}} ",
+	}
 }

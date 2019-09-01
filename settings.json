@@ -1,117 +1,138 @@
 {
-    "workbench.settings.editor": "json",
-    "editor.formatOnSave": true,
-    "prettier.requireConfig": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "editor.renderControlCharacters": true,
-    "explorer.confirmDragAndDrop": false,
-    "twigcs.executablePath": "/home/dorian/.config/composer/vendor/bin/twigcs",
-    "editor.dragAndDrop": false,
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/vendor": true,
-        "**/dist": true,
-        "**/.git": true
-    },
-    "files.exclude": {
-        "**/.git": false,
-    },
-    "editor.minimap.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.advanced.messages": {
-        "suppressCommitHasNoPreviousCommitWarning": false,
-        "suppressCommitNotFoundWarning": false,
-        "suppressFileNotUnderSourceControlWarning": false,
-        "suppressGitVersionWarning": false,
-        "suppressLineUncommittedWarning": false,
-        "suppressNoRepositoryWarning": false,
-        "suppressResultsExplorerNotice": true,
-        "suppressShowKeyBindingsNotice": true
-    },
-    "editor.rulers": [80],
-    "sort-imports.on-save": false,
-    "window.zoomLevel": 0,
-    "todohighlight.keywords": ["@FIXME", "@TODO"],
-    "extensions.ignoreRecommendations": false,
-    "workbench.editor.tabSizing": "shrink",
-    "editor.autoIndent": false,
-    "gitlens.keymap": "alternate",
-    "workbench.commandPalette.history": 500,
-    "emmet.includeLanguages": {
-        "twig": "html"
-    },
-    "emojisense.unicodeCompletionsEnabled": false,
-    "emojisense.showOnColon": false,
-    "files.associations": {
-        ".my-bashrc": "shellscript"
-    },
-    "search.usePCRE2": true,
-    "gitlens.views.fileHistory.enabled": true,
-    "gitlens.views.lineHistory.enabled": true,
-    "window.enableMenuBarMnemonics": false,
-    "window.titleBarStyle": "native",
-    // Avoid . from triggering autocomplete (e.g. ..).
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.snippetSuggestions": "top",
-    // Ignore whitespace changes and file mv.
-    "gitlens.advanced.blame.customArguments": ["-w", "-M"],
-    "[php]": {
-        "editor.formatOnSave": false,
-        // Removes $.
-        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
-    },
-    "[javascript]": {
-        // Removes $.
-        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
-    },
-    "[json]": {
-        "editor.formatOnSave": false,
-    },
-    "[twig]": {
-        "editor.formatOnSave": false,
-    },
-    "[shellscript]": {
-        // Removes $.
-        "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
-    },
-    "[scss]": {
-        // Removes - and $.
-        "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
-    },
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false,
-        "editor.formatOnSave": false
-    },
-    "gitlens.views.compare.files.layout": "list",
-    "gitlens.views.compare.location": "scm",
-    "breadcrumbs.enabled": true,
-    "gitlens.views.lineHistory.location": "scm",
-    "gitlens.settings.mode": "advanced",
-    "gitlens.currentLine.scrollable": false,
-    "gitlens.blame.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "gitlens.hovers.currentLine.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.recentChanges.highlight.locations": [
-        "gutter",
-        "line",
-        "overview"
-    ],
-    "gitlens.views.repositories.enabled": false,
-    "gitlens.views.fileHistory.avatars": false,
-    "gitlens.views.lineHistory.avatars": false,
-    "gitlens.views.compare.files.compact": false,
-    "git.openDiffOnClick": false,
-    "git.alwaysShowStagedChangesResourceGroup": true,
-    "git.inputValidationSubjectLength": 50,
-    "git.showPushSuccessNotification": true,
-    "gitlens.advanced.telemetry.enabled": false,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#bbb",
+    "statusBar.foreground": "#333",
+    "statusBar.noFolderForeground": "#fff"
+  },
+  "workbench.settings.editor": "json",
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderControlCharacters": true,
+  "explorer.confirmDragAndDrop": false,
+  "twigcs.executablePath": "/home/dorian/.config/composer/vendor/bin/twigcs",
+  "editor.dragAndDrop": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/vendor": true,
+    "**/dist": true,
+    "**/.git": true
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "editor.minimap.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": true,
+    "suppressShowKeyBindingsNotice": true
+  },
+  "editor.rulers": [80],
+  "sort-imports.on-save": false,
+  "window.zoomLevel": 0,
+  "todohighlight.keywords": ["@FIXME", "@TODO"],
+  "extensions.ignoreRecommendations": false,
+  "workbench.editor.tabSizing": "shrink",
+  "editor.autoIndent": false,
+  "gitlens.keymap": "alternate",
+  "workbench.commandPalette.history": 500,
+  "emmet.includeLanguages": {
+    "twig": "html",
+    "javascript": "javascriptreact"
+  },
+  "emojisense.unicodeCompletionsEnabled": false,
+  "emojisense.showOnColon": false,
+  "files.associations": {
+    ".my-bashrc": "shellscript",
+    "*.css": "css"
+  },
+  "search.usePCRE2": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "window.enableMenuBarMnemonics": false,
+  // Avoid . from triggering autocomplete (e.g. ..).
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.snippetSuggestions": "top",
+  // Ignore whitespace changes and file mv.
+  "gitlens.advanced.blame.customArguments": ["-w", "-M"],
+  "[sql]": {
+    "autoalign.moveableItems": [","]
+  },
+  "[php]": {
+    "editor.formatOnSave": false,
+    // Removes $.
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+  },
+  "[javascript]": {
+    // Removes $.
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.formatOnSave": false,
+  },
+  "[twig]": {
+    "editor.formatOnSave": false
+  },
+  "[shellscript]": {
+    // Removes $.
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+  },
+  "[scss]": {
+    // Removes - and $.
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.compare.location": "scm",
+  "breadcrumbs.enabled": true,
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.settings.mode": "advanced",
+  "gitlens.currentLine.scrollable": false,
+  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.hovers.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "gitlens.recentChanges.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.views.repositories.enabled": false,
+  "gitlens.views.fileHistory.avatars": false,
+  "gitlens.views.lineHistory.avatars": false,
+  "gitlens.views.compare.files.compact": false,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.inputValidationSubjectLength": 50,
+  "git.showPushSuccessNotification": true,
+  "gitlens.advanced.telemetry.enabled": false,
+  "zenMode.fullScreen": false,
+  "zenMode.centerLayout": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "window.menuBarVisibility": "hidden",
+  "versionlens.showVersionLensesAtStartup": false,
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.renderIndicators": false,
+  "editor.renderWhitespace": "all",
+  "emmet.triggerExpansionOnTab": true,
+  "editor.formatOnSaveTimeout": 20000,
+  "bracket-pair-colorizer-2.colors": [
+    "#bbb", // white
+    "#e4d98b", // yellow
+    "#e4adad", // red
+    "#a8b2eb", // blue
+    "#9fd89f" // green
+  ],
+  "editor.emptySelectionClipboard": false
 }

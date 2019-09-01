@@ -445,7 +445,8 @@
     },
     {
         "key": "ctrl+shift+q",
-        "command": "esQuotes.transformBetweenQuotes"
+        "command": "esQuotes.transformBetweenQuotes",
+        "when": "\"editorLangId == javascript\""
     },
     {
         "key": "ctrl+m",
@@ -582,5 +583,73 @@
         "key": "alt+w",
         "command": "-gitlens.diffLineWithWorking",
         "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-emojisense.quickEmojitext",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+alt+i",
+        "command": "-emojisense.quickEmojitextTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "-emojisense.quickEmoji",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "-emojisense.quickEmojiTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+q",
+        "command": "editor.togglequotes",
+        "when": "\"editorLangId != javascript\""
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.openLink"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.emmet.action.incrementNumberByOne"
+    },
+    {
+        "key": "alt+j",
+        "command": "editor.emmet.action.decrementNumberByOne"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "bracket-pair-colorizer-2.expandBracketSelection"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "markdown.extension.editing.toggleHeadingUp",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+3",
+        "command": "markdown.extension.editing.toggleHeadingDown",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "-workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
     }
 ]
