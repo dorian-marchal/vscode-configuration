@@ -15,7 +15,7 @@
 	"dump_data": {
 		"prefix": "dump",
 		"body": [
-			"{% include \"reskin/debug/dump_data.twig\" with { bloc_name: '${1:data}', hidden: true } %}"
+			"{% include \"debug/dump_data.twig\" with { bloc_name: '${1:data}' } %}"
 		]
 	},
 	"obf": {

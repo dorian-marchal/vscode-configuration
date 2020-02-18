@@ -651,5 +651,45 @@
         "key": "ctrl+shift+y",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "-markdown.extension.onShiftTabKey",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
+    },
+    {
+        "key": "shift+alt+b",
+        "command": "-extension.openInSpecifyBrowser"
+    },
+    {
+        "key": "shift+alt+b",
+        "command": "extension.openInDefaultBrowser"
+    },
+    {
+        "key": "alt+b",
+        "command": "-extension.openInDefaultBrowser"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "!atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.keepEditor",
+        "when": "!editorPinned"
+    },
+    {
+        "key": "ctrl+k enter",
+        "command": "-workbench.action.keepEditor"
+    },
+    {
+        "key": "alt+t",
+        "command": "editor.action.transpose"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus"
     }
 ]

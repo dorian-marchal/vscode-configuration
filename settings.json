@@ -6,6 +6,7 @@
   },
   "workbench.settings.editor": "json",
   "editor.formatOnSave": true,
+  "editor.autoIndent": "brackets",
   "workbench.startupEditor": "newUntitledFile",
   "editor.multiCursorModifier": "ctrlCmd",
   "files.insertFinalNewline": true,
@@ -20,7 +21,8 @@
     "**/bower_components": true,
     "**/vendor": true,
     "**/dist": true,
-    "**/.git": true
+    "**/.git": true,
+    "**/.elixir_ls": true,
   },
   "files.exclude": {
     "**/.git": false
@@ -28,22 +30,21 @@
   "editor.minimap.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.advanced.messages": {
-    "suppressCommitHasNoPreviousCommitWarning": false,
-    "suppressCommitNotFoundWarning": false,
-    "suppressFileNotUnderSourceControlWarning": false,
-    "suppressGitVersionWarning": false,
-    "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
+    "suppressGitVersionWarning": true,
     "suppressResultsExplorerNotice": true,
     "suppressShowKeyBindingsNotice": true
   },
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "sort-imports.on-save": false,
   "window.zoomLevel": 0,
-  "todohighlight.keywords": ["@FIXME", "@TODO"],
+  "todohighlight.keywords": [
+    "@FIXME",
+    "@TODO"
+  ],
   "extensions.ignoreRecommendations": false,
   "workbench.editor.tabSizing": "shrink",
-  "editor.autoIndent": false,
   "gitlens.keymap": "alternate",
   "workbench.commandPalette.history": 500,
   "emmet.includeLanguages": {
@@ -54,9 +55,12 @@
   "emojisense.showOnColon": false,
   "files.associations": {
     ".my-bashrc": "shellscript",
-    "*.css": "css"
+    "*.css": "css",
+    ".env": "shellscript",
+    "*.env": "shellscript",
+    "*.phpt": "toml",
+    ".gitalias": "shellscript"
   },
-  "search.usePCRE2": true,
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "window.enableMenuBarMnemonics": false,
@@ -64,23 +68,29 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "editor.snippetSuggestions": "top",
   // Ignore whitespace changes and file mv.
-  "gitlens.advanced.blame.customArguments": ["-w", "-M"],
-  "[sql]": {
-    "autoalign.moveableItems": [","]
-  },
+  "gitlens.advanced.blame.customArguments": [
+    "-w",
+    "-M"
+  ],
   "[php]": {
     "editor.formatOnSave": false,
     // Removes $.
-    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+  },
+  "[elixir]": {
+    "editor.wordBasedSuggestions": true,
+    // Enable this if you can't get used to <tab> as completion char.
+    //   "editor.acceptSuggestionOnEnter": "on",
   },
   "[javascript]": {
     // Removes $.
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.formatOnSave": false,
   },
   "[twig]": {
     "editor.formatOnSave": false
@@ -90,24 +100,38 @@
     "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
   },
   "[scss]": {
-    // Removes - and $.
-    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?"
+    // Removes $.
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?"
   },
   "[markdown]": {
     "files.trimTrailingWhitespace": false,
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.tabSize": 2
   },
-  "gitlens.views.compare.files.layout": "list",
+  "[toml]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
   "gitlens.views.compare.location": "scm",
   "breadcrumbs.enabled": true,
   "gitlens.views.lineHistory.location": "scm",
-  "gitlens.settings.mode": "advanced",
   "gitlens.currentLine.scrollable": false,
-  "gitlens.blame.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.blame.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
   "gitlens.hovers.currentLine.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "gitlens.recentChanges.highlight.locations": ["gutter", "line", "overview"],
+  "gitlens.recentChanges.highlight.locations": [
+    "gutter",
+    "line",
+    "overview"
+  ],
   "gitlens.views.repositories.enabled": false,
   "gitlens.views.fileHistory.avatars": false,
   "gitlens.views.lineHistory.avatars": false,
@@ -116,23 +140,53 @@
   "git.inputValidationSubjectLength": 50,
   "git.showPushSuccessNotification": true,
   "gitlens.advanced.telemetry.enabled": false,
-  "zenMode.fullScreen": false,
+  "zenMode.fullScreen": true,
   "zenMode.centerLayout": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "window.menuBarVisibility": "hidden",
   "versionlens.showVersionLensesAtStartup": false,
   "diffEditor.renderSideBySide": false,
   "diffEditor.renderIndicators": false,
   "editor.renderWhitespace": "all",
   "emmet.triggerExpansionOnTab": true,
-  "editor.formatOnSaveTimeout": 20000,
+  "editor.formatOnSaveTimeout": 10000,
   "bracket-pair-colorizer-2.colors": [
-    "#bbb", // white
+    "#bbb", // gray
     "#e4d98b", // yellow
     "#e4adad", // red
     "#a8b2eb", // blue
     "#9fd89f" // green
   ],
-  "editor.emptySelectionClipboard": false
+  "editor.emptySelectionClipboard": false,
+  "open-in-browser.default": "google-chrome",
+  "window.menuBarVisibility": "hidden",
+  "phpcs.showWarnings": false,
+  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.toc.levels": "1..6",
+  "markdown.extension.toc.unorderedList.marker": "-",
+  "markdown.extension.toc.orderedList": false,
+  "markdown.extension.toc.plaintext": false,
+  "markdown.extension.toc.updateOnSave": true,
+  "markdown.extension.toc.downcaseLink": true,
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "markdown.extension.orderedList.marker": "ordered",
+  "markdown.extension.italic.indicator": "*",
+  "markdown.extension.tableFormatter.normalizeIndentation": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "markdown.extension.toc.omittedFromToc": {
+    "docs/SEO.md": [
+      "# Documentation de la configuration SEO",
+      "## Sommaire"
+    ],
+  },
+  "git-graph.defaultFileViewType": "File List",
+  "gitlens.views.compare.files.layout": "list",
+  "workbench.editor.limit.enabled": true,
+  "files.defaultLanguage": "markdown",
+  "breadcrumbs.enabled": false,
+  "html.mirrorCursorOnMatchingTag": true,
+  "editor.suggest.insertMode": "replace",
+  "elixirLS.suggestSpecs": false,
+  "editor.wordBasedSuggestions": false
 }
