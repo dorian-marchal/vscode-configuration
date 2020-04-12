@@ -691,5 +691,10 @@
         "key": "ctrl+shift+c",
         "command": "workbench.action.terminal.copySelection",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus"
     }
 ]

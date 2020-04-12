@@ -16,14 +16,14 @@
 	// 	"description": "Log output to console"
 	// }
 	"console.log": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "cl",
 		"body": [
 			"console.log(${1});"
 		]
 	},
 	"describe": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "desc",
 		"body": [
 			"describe('${1:...}', ${2}() => {",
@@ -32,7 +32,7 @@
 		]
 	},
 	"it": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "it",
 		"body": [
 			"it('${1:...}', ${2}() => {",
@@ -41,7 +41,7 @@
 		]
 	},
 	"test": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "test",
 		"body": [
 			"test('${1:...}', ${2}() => {",
@@ -50,32 +50,32 @@
 		]
 	},
 	"deps": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "deps",
 		"body": "@param {Object} deps Dependency injection, used for unit testing.",
 	},
 	"from": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "from",
 		"body": "import ${2:_} from '$1';",
 	},
 	"___": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "___",
 		"body": "import _ from 'lodash';",
 	},
 	"imp": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "imp",
 		"body": "import $1 from '${2:$1}';",
 	},
 	"jsdom": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "jsdom",
 		"body": "/** @jest-environment jsdom */",
 	},
 	"throw": {
-		"scope": "javascript,javascriptreact",
+		"scope": "javascript,javascriptreact,typescript",
 		"prefix": "throw",
 		"body": "throw new Error($1);",
 	}

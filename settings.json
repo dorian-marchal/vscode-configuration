@@ -27,7 +27,7 @@
   "files.exclude": {
     "**/.git": false
   },
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.advanced.messages": {
     "suppressGitVersionWarning": true,
@@ -41,7 +41,8 @@
   "window.zoomLevel": 0,
   "todohighlight.keywords": [
     "@FIXME",
-    "@TODO"
+    "@TODO",
+    "@tag :only",
   ],
   "extensions.ignoreRecommendations": false,
   "workbench.editor.tabSizing": "shrink",
@@ -117,7 +118,6 @@
     "editor.formatOnSave": true,
   },
   "gitlens.views.compare.location": "scm",
-  "breadcrumbs.enabled": true,
   "gitlens.views.lineHistory.location": "scm",
   "gitlens.currentLine.scrollable": false,
   "gitlens.blame.highlight.locations": [
@@ -173,20 +173,48 @@
   "markdown.extension.italic.indicator": "*",
   "markdown.extension.tableFormatter.normalizeIndentation": false,
   "editor.insertSpaces": true,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "markdown.extension.toc.omittedFromToc": {
     "docs/SEO.md": [
       "# Documentation de la configuration SEO",
-      "## Sommaire"
+      "## Sommaire",
     ],
   },
   "git-graph.defaultFileViewType": "File List",
   "gitlens.views.compare.files.layout": "list",
-  "workbench.editor.limit.enabled": true,
   "files.defaultLanguage": "markdown",
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "html.mirrorCursorOnMatchingTag": true,
   "editor.suggest.insertMode": "replace",
   "elixirLS.suggestSpecs": false,
-  "editor.wordBasedSuggestions": false
+  "editor.wordBasedSuggestions": false,
+  "vetur.format.defaultFormatter.html": "prettier",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "togglequotes.chars": [
+    "\"",
+    "'",
+    "`"
+  ],
+  "auto-comment-next-line.list": [
+    {
+      "char": "//",
+      "languages": [
+        "php",
+        "javascript",
+        "jsonc"
+      ]
+    },
+    {
+      "char": "#",
+      "languages": [
+        "python",
+        "elixir"
+      ]
+    }
+  ]
 }
